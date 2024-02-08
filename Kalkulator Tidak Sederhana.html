@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR WARUNG MEWAH dgn JavaScript</title>
+    <link href="https://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet">                       
+</head>
+<style> 
+    body {
+        background-color: lightgrey;
+    }
+    .tombol { 
+    padding-top: 15px; 
+    padding-left: 25px; 
+    padding-right: 25px;
+    padding-bottom: 15px; 
+    margin: 5px;
+    margin-right: 5px; 
+    background: olive; 
+    color: white; 
+    font-weight: bold; 
+    } 
+    .font {
+        color: darkgreen;
+        font-size: 35px;
+        font-family: sans-serif;                                      
+        @import url('https://fonts.cdnfonts.com/css/ds-digital');
+      }
+    </style>
+
+<body>  
+    <center>   
+        <h1>APPLIKASI KALKULATOR TIDAK SEDERHANA</h1>
+        <form name="calc">
+        <table border="3" bordercolor="olive">
+        <tbody><tr><td><input type="text" name="input" class="font"></td></tr>
+        
+        <tr><td>
+            <center>
+        <input class="tombol" type="button" value="  1  " onclick="calc.input.value += '1'">
+        <input class="tombol" type="button" value="  2  " onclick="calc.input.value += '2'">
+        <input class="tombol" type="button" value="   3   " onclick="calc.input.value += '3'">
+        <input class="tombol" type="button" value="  +  " onclick="calc.input.value += ' + '"> 
+        <input class="tombol" type="button" value="  C  " onclick="calc.input.value = '  '"> <br>
+        <input class="tombol" type="button" value="  4  " onclick="calc.input.value += '4'">
+        <input class="tombol" type="button" value="  5  " onclick="calc.input.value += '5'">
+        <input class="tombol" type="button" value="   6   " onclick="calc.input.value += '6'">
+        <input class="tombol" type="button" value="   -   " onclick="calc.input.value += ' - '"> 
+        <input class="tombol" type="button" value=" % " onclick="calc.input.value = eval(calc.input.value) / 100"> <br>
+        <input class="tombol" type="button" value="  7  " onclick="calc.input.value += '7'">
+        <input class="tombol" type="button" value="  8  " onclick="calc.input.value += '8'">
+        <input class="tombol" type="button" value="   9   " onclick="calc.input.value += '9'">
+        <input class="tombol" type="button" value="   x   " onclick="calc.input.value += ' * '"> 
+        <input class="tombol" type="button" value="  .  " onclick="calc.input.value += '.'"> <br>
+        <input class="tombol" type="button" value="  0  " onclick="calc.input.value += '0'">
+        <input class="tombol" type="button" value=" 00 " onclick="calc.input.value += '00'">
+        <input class="tombol" type="button" value="000" onclick="calc.input.value += '000'"> 
+        <input class="tombol" type="button" value="  /    " onclick="calc.input.value += ' / '"> 
+        <input class="tombol" type="button" value="  = " onclick="calc.input.value = eval(calc.input.value)"> <br>
+        <input class="tombol" type="button" value=" ²√ " onclick="calc.input.value = Math.sqrt(calc.input.value)"> 
+        <input class="tombol" type="button" value=" ³√ " onclick="calc.input.value = Math.cbrt(calc.input.value)"> 
+        <input class="tombol" type="button" value="n^²" onclick="calc.input.value = Math.pow(calc.input.value,2)"> 
+        <input class="tombol" type="button" value=" n^³ " onclick="calc.input.value = Math.pow(calc.input.value,3)"> 
+        <input class="tombol" type="button" value=" ON " onclick="calc.input.value = 'by Fajrina'"> <br>  
+        </td></tr>
+        </tbody></table>
+        </form>
+        <h1>Developed with JavaScript <br> by Fajrina Yusri</h1>
+    </center>  
+   
+</body>
+</html>
